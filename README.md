@@ -33,7 +33,7 @@ Durante las sesiones se ven los conceptos teóricos y empezamos las prácticas q
 * Control con Infrarrojos
 * Lectura de tiempos de RTC
 
-### Practicas:
+### Prácticas:
   * Estación meteorológica
   * Control de la visualización de 7 segmentos via Infrarrojos
 
@@ -44,8 +44,19 @@ Durante las sesiones se ven los conceptos teóricos y empezamos las prácticas q
   * Motores CC
   * Paso a paso
 * Lectura de tarjertas RFID
+
+
+### Prácticas:
+  * Control de motores via Infrarrojos
+
+## Sesión 4
+* Introducción a Internet de las Cosas (IOT)
+* Protocolos de envio de datos (REST, MQTT)
+* Plataformas online ( Thingspeak, Thinger.io, etc.)
 * Uso de placa wifi NodeMCU
 
-### Practicas:
-  * Adaptación al NodeMCU de la estación meteorológica con wifi
-  * Control de motores via Infrarrojos
+### Prácticas
+Adaptación al NodeMCU de la estación meteorológica con wifi con publicación online de datos
+
+## Sesión 5
+* Repaso y ampliación de contenidos
