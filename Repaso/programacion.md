@@ -2,13 +2,10 @@
 
 
 ## José Antonio Vacas @javacasm
-## Organiza: Darwin Eventur
-## Facultad de Ciencias
-## 14 al 17 de Febrero de 2017
-##								#Arduino2017
 
-![CC](../images/Licencia_CC_peque.png)
- 
+
+![CC](/imagenes/Licencia_CC_peque.png)
+
 ***
 
 <!-- background: #184bc6-->
@@ -86,18 +83,18 @@ Utilizamos el pin 13 porque ya tiene un led conectado en la placa
 
 ![blink](http://arduino.cc/en/uploads/Tutorial/ExampleCircuit_bb.png)
 
-int led = 13;
+    int led = 13;
 
-void setup() {                
-  pinMode(led, OUTPUT);     
-}
+    void setup() {                
+      pinMode(led, OUTPUT);     
+    }
 
-void loop() {
-  digitalWrite(led, HIGH);   // Encendemos
-  delay(1000);               // Esperamos
-  digitalWrite(led, LOW);    // Apagamos
-  delay(1000);               // Esperamos
-}
+    void loop() {
+      digitalWrite(led, HIGH);   // Encendemos
+      delay(1000);               // Esperamos
+      digitalWrite(led, LOW);    // Apagamos
+      delay(1000);               // Esperamos
+    }
 
 ***
 
@@ -281,9 +278,9 @@ Ejemplo: activaremos un led al pasar de determinado nivel de luz
 
 Ejemplo LDR Umbral 3 Leds
 
-![ldr](imagenes/LDR_umbral.png)
+![ldr](imagenes/LDR-umbral.png)
 
-Ejemplo 2: Regular el nivel con un potenciometro.  Documentarlo.
+Ejemplo 2: Regular el nivel con un potenciómetro.  Documentarlo.
 
 ***
 
