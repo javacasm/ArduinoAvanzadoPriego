@@ -4,13 +4,21 @@ CEP Priego-Montilla
 
 Febrero-Abril de 2018
 
+José Antonio Vacas @javacasm
 
-Durante las sesiones se ven los conceptos teóricos y empezamos las prácticas que complentan en las horas online
+## https://github.com/javacasm/ArduinoAvanzadoPriego
 
-## Sesión 1
+# Calendario
+
+## Sesión 1 13-Febrero
 * Repaso de programación y electrónica
+  * [Contenido del kit](https://www.prometec.net/producto/kit-inicio/)
   * Leds (digital y PWM)
   * Pulsadores y potenciómetros
+  * Simuladores
+  * Entorno de programación
+  * Materiales de Repaso  
+    * 
 * Programación avanzada
     * Programación C++ avanzada
     * Interrupciones
@@ -21,7 +29,7 @@ Durante las sesiones se ven los conceptos teóricos y empezamos las prácticas q
   Scanner Larson (8 leds) usando Registros
 
 
-## Sesión 2
+## Sesión 2 19-Febrero
 * Uso de display:
   * LCD
   * 7 segmentos (usando registro de desplazamiento 595)
@@ -38,7 +46,7 @@ Durante las sesiones se ven los conceptos teóricos y empezamos las prácticas q
   * Control de la visualización de 7 segmentos via Infrarrojos
 
 
-## Sesión 3
+## Sesión 3 5-Marzo
 * Control de potencia usando Reles
 * Control de motores
   * Motores CC
@@ -49,7 +57,7 @@ Durante las sesiones se ven los conceptos teóricos y empezamos las prácticas q
 ### Prácticas:
   * Control de motores via Infrarrojos
 
-## Sesión 4
+## Sesión 4 12-Marzo
 * Introducción a Internet de las Cosas (IOT)
 * Protocolos de envio de datos (REST, MQTT)
 * Plataformas online ( Thingspeak, Thinger.io, etc.)
@@ -58,5 +66,9 @@ Durante las sesiones se ven los conceptos teóricos y empezamos las prácticas q
 ### Prácticas
 Adaptación al NodeMCU de la estación meteorológica con wifi con publicación online de datos
 
-## Sesión 5
+## Sesión 5 15-Marzo
 * Repaso y ampliación de contenidos
+
+
+## Sesión 6 10-Abril
+* Puesta en común
