@@ -55,7 +55,7 @@ José Antonio Vacas @javacasm
 
 
 ## Sesión 3 5-Marzo
-* Control de potencia usando Reles
+* [Control de potencia](./Repaso/ElectrónicaPotencia.pdf)
 * Control de motores
   * [Motores CC](./Repaso/2.1.4_Motores.pdf)
   * [Paso a paso](./Repaso/stepper.md)
