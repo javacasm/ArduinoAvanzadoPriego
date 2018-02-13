@@ -15,7 +15,9 @@ José Antonio Vacas @javacasm
   * [Contenido del kit](https://www.prometec.net/producto/kit-inicio/)
   * Leds ([digital](https://github.com/javacasm/ArduinoAvanzadoPriego/blob/master/Repaso/programacion.md#sem%C3%A1foro) y [PWM](https://github.com/javacasm/ArduinoAvanzadoPriego/blob/master/Repaso/programacion.md#salidas-anal%C3%B3gicas))
   * [Pulsadores](https://github.com/javacasm/ArduinoAvanzadoPriego/blob/master/Repaso/programacion.md#detectar-una-pulsaci%C3%B3n) y [sensores](https://github.com/javacasm/ArduinoAvanzadoPriego/blob/master/Repaso/programacion.md#medidas-con-sensores)
+  * [Modelos de Arduino](./Repaso/ComparacionHardware.pdf)
   * [Simuladores](./Repaso/3.5_Simuladores.pdf)
+  * Diseño de circuitoscon [Fritzing](./Repaso/Fritzing.pdf)
   * [Entorno de programación](./IDES.md)
   * Materiales de Repaso  
     * [Introducción a la electrónica](https://github.com/javacasm/ArduinoAvanzadoPriego/blob/master/Repaso/0.4_IntroduccionElectr%C3%B3nica.pdf)
@@ -38,10 +40,10 @@ José Antonio Vacas @javacasm
   * [LCD](./Repaso/2.1.6_DisplayLCD.pdf)
   * 7 segmentos (usando registro de desplazamiento 595)
 * Lectura de sensores:
-  * Sensores de humedad y temperatura (DHT)
+  * Sensores de humedad y temperatura ([DHT](./Repaso/DHT.pdf))
   * Sensores de lluvia/humedad
   * Sensores de llama
-  * Sensores de temperatura (LM35)
+  * Sensores de temperatura ([LM35](./Repaso/LM35.pdf))
   * Material de consulta
     * [Montajes y tipos de Sensores](https://github.com/javacasm/ArduinoAvanzadoPriego/blob/master/Repaso/Sensores.pdf)
 * [Control con Infrarrojos](./Repaso/3.7_Infrarrojos.pdf)
