@@ -40,6 +40,8 @@ José Antonio Vacas @javacasm
   * Sensores de lluvia/humedad
   * Sensores de llama
   * Sensores de temperatura (LM35)
+  * Material de consulta
+    * [Montajes y tipos de Sensores](ttps://github.com/javacasm/ArduinoAvanzadoPriego/blob/master/Repaso/Sensores.pdf)
 * Control con Infrarrojos
 * Lectura de tiempos de RTC
 
@@ -53,7 +55,7 @@ José Antonio Vacas @javacasm
 * Control de motores
   * Motores CC
   * Paso a paso
-* Lectura de tarjertas RFID
+* [Lectura de tarjertas RFID](./RFid.md)
 
 
 ### Prácticas:
