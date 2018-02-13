@@ -13,12 +13,14 @@ José Antonio Vacas @javacasm
 ## Sesión 1 13-Febrero
 * Repaso de programación y electrónica
   * [Contenido del kit](https://www.prometec.net/producto/kit-inicio/)
-  * Leds (digital y PWM)
-  * Pulsadores y potenciómetros
+  * Leds ([digital](https://github.com/javacasm/ArduinoAvanzadoPriego/blob/master/Repaso/programacion.md#sem%C3%A1foro) y [PWM](https://github.com/javacasm/ArduinoAvanzadoPriego/blob/master/Repaso/programacion.md#salidas-anal%C3%B3gicas))
+  * [Pulsadores](https://github.com/javacasm/ArduinoAvanzadoPriego/blob/master/Repaso/programacion.md#detectar-una-pulsaci%C3%B3n) y [sensores](https://github.com/javacasm/ArduinoAvanzadoPriego/blob/master/Repaso/programacion.md#medidas-con-sensores)
   * Simuladores
   * Entorno de programación
   * Materiales de Repaso  
-    * 
+    * [Introducción a la electrónica](https://github.com/javacasm/ArduinoAvanzadoPriego/blob/master/Repaso/0.4_IntroduccionElectr%C3%B3nica.pdf)
+    * [Introducción a la programación](https://github.com/javacasm/ArduinoAvanzadoPriego/blob/master/Repaso/1.1.1_IntroduccionProgramacion.pdf)
+    * [Montajes básicos](https://github.com/javacasm/ArduinoAvanzadoPriego/blob/master/Repaso/1.1.3_IntroduccionMontajes.pdf)
 * Programación avanzada
     * Programación C++ avanzada
     * Interrupciones
