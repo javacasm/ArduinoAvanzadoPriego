@@ -22,10 +22,12 @@ José Antonio Vacas @javacasm
     * [Introducción a la programación](https://github.com/javacasm/ArduinoAvanzadoPriego/blob/master/Repaso/1.1.1_IntroduccionProgramacion.pdf)
     * [Montajes básicos](https://github.com/javacasm/ArduinoAvanzadoPriego/blob/master/Repaso/1.1.3_IntroduccionMontajes.pdf)
 * Programación avanzada
-    * Programación C++ avanzada
-    * Interrupciones
-    * Manejo de puertos en parelelo (Registros)
-
+    * [Programación C++ avanzada](./Repaso/1.2.3_ProgramacionAvanzadaCavanzado.pdf)
+      * [Proceso de compilación](ProcesoCompilación/README.md)
+      * [Proyectos con varios ficheros](ProyectoVariosFicheros/README.md)
+    * Interrupciones [Hardware](./Repaso/2.1.3_InterrupcionesHardware.pdf) y [Software](./Repaso/1.2.2_ProgramacionAvanzadaInterrupcionesSoftware.pdf)
+    * [Manejo de puertos en parelelo](./Repaso/1.2.1_ProgramacionAvanzadaPuertos.pdf) (Registros)
+    * [Librerías](./Repaso/1.2.4_ProgramaciónAvanzadaLibrerías.pdf)
 ### Prácticas:
   Semáforo con pulsador para activación. Regulación de duración con potenciómetros
   Scanner Larson (8 leds) usando Registros
@@ -33,7 +35,7 @@ José Antonio Vacas @javacasm
 
 ## Sesión 2 19-Febrero
 * Uso de display:
-  * LCD
+  * [LCD](./Repaso/2.1.6_DisplayLCD.pdf)
   * 7 segmentos (usando registro de desplazamiento 595)
 * Lectura de sensores:
   * Sensores de humedad y temperatura (DHT)
@@ -41,9 +43,9 @@ José Antonio Vacas @javacasm
   * Sensores de llama
   * Sensores de temperatura (LM35)
   * Material de consulta
-    * [Montajes y tipos de Sensores](ttps://github.com/javacasm/ArduinoAvanzadoPriego/blob/master/Repaso/Sensores.pdf)
-* Control con Infrarrojos
-* Lectura de tiempos de RTC
+    * [Montajes y tipos de Sensores](https://github.com/javacasm/ArduinoAvanzadoPriego/blob/master/Repaso/Sensores.pdf)
+* [Control con Infrarrojos](./Repaso/3.7_Infrarrojos.pdf)
+* Lectura de [tiempos (RTC)](./Repaso/4.2_RTC.pdf)
 
 ### Prácticas:
   * Estación meteorológica
@@ -53,8 +55,8 @@ José Antonio Vacas @javacasm
 ## Sesión 3 5-Marzo
 * Control de potencia usando Reles
 * Control de motores
-  * Motores CC
-  * Paso a paso
+  * [Motores CC](./Repaso/2.1.4_Motores.pdf)
+  * [Paso a paso](./Repaso/stepper.md)
 * [Lectura de tarjertas RFID](./RFid.md)
 
 
