@@ -13,29 +13,27 @@ José Antonio Vacas @javacasm
 ## Sesión 1 13-Febrero
 * Repaso de programación y electrónica
   * [Contenido del kit](https://www.prometec.net/producto/kit-inicio/)
-  * Leds ([digital](https://github.com/javacasm/ArduinoAvanzadoPriego/blob/master/Repaso/programacion.md#sem%C3%A1foro) y [PWM](https://github.com/javacasm/ArduinoAvanzadoPriego/blob/master/Repaso/programacion.md#salidas-anal%C3%B3gicas))
-  * [Pulsadores](https://github.com/javacasm/ArduinoAvanzadoPriego/blob/master/Repaso/programacion.md#detectar-una-pulsaci%C3%B3n) y [sensores](https://github.com/javacasm/ArduinoAvanzadoPriego/blob/master/Repaso/programacion.md#medidas-con-sensores)
-  * [Modelos de Arduino](./Repaso/ComparacionHardware.pdf)
+  * Leds ([digital](./Repaso/programacion.md#sem%C3%A1foro)
+  * [Sensores](./Repaso/programacion.md#medidas-con-sensores)
   * [Simuladores](./Repaso/3.5_Simuladores.pdf)
-  * Diseño de circuitoscon [Fritzing](./Repaso/Fritzing.pdf)
+
+* Materiales de Consulta  
+  * [Introducción a la electrónica](./Repaso/0.4_IntroduccionElectr%C3%B3nica.pdf)
+  * [Introducción a la programación](./Repaso/1.1.1_IntroduccionProgramacion.pdf)
+  * [Montajes básicos](./Repaso/1.1.3_IntroduccionMontajes.pdf)
+  * [Modelos de Arduino](./Repaso/ComparacionHardware.pdf)
+  * Diseño de circuitos con [Fritzing](./Repaso/Fritzing.pdf)
   * [Entorno de programación](./IDES.md)
-  * Materiales de Repaso  
-    * [Introducción a la electrónica](https://github.com/javacasm/ArduinoAvanzadoPriego/blob/master/Repaso/0.4_IntroduccionElectr%C3%B3nica.pdf)
-    * [Introducción a la programación](https://github.com/javacasm/ArduinoAvanzadoPriego/blob/master/Repaso/1.1.1_IntroduccionProgramacion.pdf)
-    * [Montajes básicos](https://github.com/javacasm/ArduinoAvanzadoPriego/blob/master/Repaso/1.1.3_IntroduccionMontajes.pdf)
-* Programación avanzada
-    * [Programación C++ avanzada](./Repaso/1.2.3_ProgramacionAvanzadaCavanzado.pdf)
-      * [Proceso de compilación](ProcesoCompilación/README.md)
-      * [Proyectos con varios ficheros](ProyectoVariosFicheros/README.md)
-    * Interrupciones [Hardware](./Repaso/2.1.3_InterrupcionesHardware.pdf) y [Software](./Repaso/1.2.2_ProgramacionAvanzadaInterrupcionesSoftware.pdf)
-    * [Manejo de puertos en parelelo](./Repaso/1.2.1_ProgramacionAvanzadaPuertos.pdf) (Registros)
-    * [Librerías](./Repaso/1.2.4_ProgramaciónAvanzadaLibrerías.pdf)
+
 ### Prácticas:
-  Semáforo con pulsador para activación. Regulación de duración con potenciómetros
-  Scanner Larson (8 leds) usando Registros
+  [Regulación de duración de parpadeo con potenciómetro](./codigo/Blink_pot/Blink_pot.ino)
+  [Medida de humedad o salinidad](./codigo/Humedad_Saturacion_salina/Humedad_Saturacion_salina.ino)
+  [Sistema de Riego](./codigo/Sistema_Riego/Sistema_Riego.ino)
 
 
 ## Sesión 2 19-Febrero
+* Led [PWM](./Repaso/programacion.md#salidas-anal%C3%B3gicas))
+* [Pulsadores](/Repaso/programacion.md#detectar-una-pulsaci%C3%B3n)
 * Uso de display:
   * [LCD](./Repaso/2.1.6_DisplayLCD.pdf)
   * 7 segmentos (usando registro de desplazamiento 595)
@@ -45,12 +43,20 @@ José Antonio Vacas @javacasm
   * Sensores de llama
   * Sensores de temperatura ([LM35](./Repaso/LM35.pdf))
   * Material de consulta
+  * Programación avanzada
+      * [Programación C++ avanzada](./Repaso/1.2.3_ProgramacionAvanzadaCavanzado.pdf)
+        * [Proceso de compilación](ProcesoCompilación/README.md)
+        * [Proyectos con varios ficheros](ProyectoVariosFicheros/README.md)
+      * Interrupciones [Hardware](./Repaso/2.1.3_InterrupcionesHardware.pdf) y [Software](./Repaso/1.2.2_ProgramacionAvanzadaInterrupcionesSoftware.pdf)
+      * [Manejo de puertos en parelelo](./Repaso/1.2.1_ProgramacionAvanzadaPuertos.pdf) (Registros)
+      * [Librerías](./Repaso/1.2.4_ProgramaciónAvanzadaLibrerías.pdf)  
     * [Montajes y tipos de Sensores](https://github.com/javacasm/ArduinoAvanzadoPriego/blob/master/Repaso/Sensores.pdf)
 * [Control con Infrarrojos](./Repaso/3.7_Infrarrojos.pdf)
 * Lectura de [tiempos (RTC)](./Repaso/4.2_RTC.pdf)
 
 ### Prácticas:
   * Estación meteorológica
+  * Semáforo con pulsador para activación.
   * Control de la visualización de 7 segmentos via Infrarrojos
 
 
