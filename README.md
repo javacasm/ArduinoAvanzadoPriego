@@ -13,7 +13,7 @@ José Antonio Vacas @javacasm
 ## Sesión 1 13-Febrero
 * Repaso de programación y electrónica
   * [Contenido del kit](https://www.prometec.net/producto/kit-inicio/)
-  * Leds ([digital](./Repaso/programacion.md#sem%C3%A1foro)
+  * Usando Leds como salidas [digitales](./Repaso/programacion.md#sem%C3%A1foro)
   * [Sensores](./Repaso/programacion.md#medidas-con-sensores)
   * [Simuladores](./Repaso/3.5_Simuladores.pdf)
 
@@ -26,9 +26,12 @@ José Antonio Vacas @javacasm
   * [Entorno de programación](./IDES.md)
 
 ### Prácticas:
-  [Regulación de duración de parpadeo con potenciómetro](./codigo/Blink_pot/Blink_pot.ino)
-  [Medida de humedad o salinidad](./codigo/Humedad_Saturacion_salina/Humedad_Saturacion_salina.ino)
-  [Sistema de Riego](./codigo/Sistema_Riego/Sistema_Riego.ino)
+  * [Regulación de duración de parpadeo con potenciómetro](./codigo/Blink_pot/Blink_pot.ino)
+![diseño](https://d10zxokiwapyap.cloudfront.net/circuits/6is9dUxHaNz-ecec58f7-35dc-4516-ae12-a31f52b4e9d0-snapshot-thumb?&s=d796c4086745ef0cdded47ea6e736cd6)
+
+  * [Medida de humedad o salinidad](./codigo/Humedad_Saturacion_salina/Humedad_Saturacion_salina.ino)
+  ![Humedad](./images/MedidaHumedadSalinidad_bb.png)
+  * [Sistema de Riego](./codigo/Sistema_Riego/Sistema_Riego.ino)
 
 
 ## Sesión 2 19-Febrero
