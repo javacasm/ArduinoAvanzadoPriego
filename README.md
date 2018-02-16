@@ -32,7 +32,7 @@ José Antonio Vacas @javacasm
   * [Medida de humedad o salinidad](./codigo/Humedad_Saturacion_salina/Humedad_Saturacion_salina.ino)
   ![Humedad](./images/MedidaHumedadSalinidad_bb.png)
   * [Sistema de Riego](./codigo/Sistema_Riego/Sistema_Riego.ino)
-
+![Sistema de riego](./images/SistemaRiego_bb.png)
 
 ## Sesión 2 19-Febrero
 * Led [PWM](./Repaso/programacion.md#salidas-anal%C3%B3gicas))
