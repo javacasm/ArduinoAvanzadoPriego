@@ -83,7 +83,9 @@ José Antonio Vacas @javacasm
 
 
 ### Tarea
-Vamos a controlar el color de un led RGB con 3 potenciometros (en el kit tenemos 1 potenciometro y con el joystick podemos simular otros 2 (VrX y VrY))
+Vamos a controlar el color de un led RGB con 3 potenciometros (en el kit tenemos 1 potenciómetro y con el joystick podemos simular otros 2 (VrX y VrY))
+
+![](http://codigo21.educacion.navarra.es/wp-content/uploads/2016/02/joystick11.png)
 
 [Proyecto en Tinkercad](https://www.tinkercad.com/things/48ZTGqClfOM)
 
