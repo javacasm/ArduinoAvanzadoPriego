@@ -32,47 +32,73 @@ José Antonio Vacas @javacasm
   * [Medida de humedad o salinidad](./codigo/Humedad_Saturacion_salina/Humedad_Saturacion_salina.ino)
   ![Humedad](./images/MedidaHumedadSalinidad_bb.png)
   * [Sistema de Riego](./codigo/Sistema_Riego/Sistema_Riego.ino)
-![Sistema de riego](./images/SistemaRiego_bb.png)
+  ![Sistema de riego](./images/SistemaRiego_bb.png)
+
+### Tarea voluntaria
+
+* Fijar el umbral de riego mediante un potenciómetro
+
 
 ## Sesión 2 19-Febrero
-* Led [PWM](./Repaso/programacion.md#salidas-anal%C3%B3gicas))
-* [Pulsadores](/Repaso/programacion.md#detectar-una-pulsaci%C3%B3n)
-* Uso de display:
-  * [LCD](./Repaso/2.1.6_DisplayLCD.pdf)
-  * 7 segmentos (usando registro de desplazamiento 595)
+* Control de brillo de le Led con  [PWM](./Repaso/programacion.md#salidas-anal%C3%B3gicas)
+
+* Uso de display [LCD](./Repaso/2.1.6_DisplayLCD.pdf)
+* [Librerías](./Repaso/1.2.4_ProgramaciónAvanzadaLibrerías.pdf)  
 * Lectura de sensores:
   * Sensores de humedad y temperatura ([DHT](./Repaso/DHT.pdf))
-  * Sensores de lluvia/humedad
-  * Sensores de llama
+* Material de consulta
+  * [Montajes y tipos de Sensores](https://github.com/javacasm/ArduinoAvanzadoPriego/blob/master/Repaso/Sensores.pdf)
   * Sensores de temperatura ([LM35](./Repaso/LM35.pdf))
-  * Material de consulta
-  * Programación avanzada
-      * [Programación C++ avanzada](./Repaso/1.2.3_ProgramacionAvanzadaCavanzado.pdf)
-        * [Proceso de compilación](ProcesoCompilación/README.md)
-        * [Proyectos con varios ficheros](ProyectoVariosFicheros/README.md)
-      * Interrupciones [Hardware](./Repaso/2.1.3_InterrupcionesHardware.pdf) y [Software](./Repaso/1.2.2_ProgramacionAvanzadaInterrupcionesSoftware.pdf)
-      * [Manejo de puertos en parelelo](./Repaso/1.2.1_ProgramacionAvanzadaPuertos.pdf) (Registros)
-      * [Librerías](./Repaso/1.2.4_ProgramaciónAvanzadaLibrerías.pdf)  
-    * [Montajes y tipos de Sensores](https://github.com/javacasm/ArduinoAvanzadoPriego/blob/master/Repaso/Sensores.pdf)
-* [Control con Infrarrojos](./Repaso/3.7_Infrarrojos.pdf)
-* Lectura de [tiempos (RTC)](./Repaso/4.2_RTC.pdf)
+
 
 ### Prácticas:
+  * Ciclo de color con led RGB
+
+  [Proyecto de tinkercad](https://www.tinkercad.com/things/2v5LHQa9nd1)
+
+  ![LED RGB](./images/bucles_Color_LED_RGB.png)
+  * Lectura de temperatura
+    * Instalamos Libreria SimpleDHT  con el gestor de temperatura (Menu -> Programa -> Inclluir libreria -> Gestor Librerias)
+    * Abrimos el  Ejemplo de la libreria "SimpleDHT" DHT11Default
+    * Conectamos el sensor DHT11 segun la imagen
+      ![Modulo DHT](./images/DHT11_Kit.jpg)
+  * Test de pantalla LCD I2C
+    * Instalamos la libreria LiquidCrystal I2C
+    * Abrimos el ejemplo de la libreria "LiquidCrystal I2C" HelloWorld
+    * Cambiamos la direccion del LCD ( Puede ser 0x27 o 0x30 o 0x3F)
+    * Conectamos el LCD
+    * Ajustamos el contraste con el potenciometro de la placa
   * Estación meteorológica
-  * Semáforo con pulsador para activación.
-  * Control de la visualización de 7 segmentos via Infrarrojos
+
+
+### Tarea
+Vamos a controlar el color de un led RGB con 3 potenciometros (en el kit tenemos 1 potenciometro y el joystick)
+
+![](./images/Control_Potenciometros_RGB.png)
 
 
 ## Sesión 3 5-Marzo
+* [Pulsadores](/Repaso/programacion.md#detectar-una-pulsaci%C3%B3n)
+* Programación avanzada
+    * [Programación C++ avanzada](./Repaso/1.2.3_ProgramacionAvanzadaCavanzado.pdf)
+      * [Proceso de compilación](ProcesoCompilación/README.md)
+      * [Proyectos con varios ficheros](ProyectoVariosFicheros/README.md)
+    * Interrupciones [Hardware](./Repaso/2.1.3_InterrupcionesHardware.pdf) y [Software](./Repaso/1.2.2_ProgramacionAvanzadaInterrupcionesSoftware.pdf)
+    * [Manejo de puertos en parelelo](./Repaso/1.2.1_ProgramacionAvanzadaPuertos.pdf) (Registros)
+
 * [Control de potencia](./Repaso/ElectrónicaPotencia.pdf)
 * Control de motores
   * [Motores CC](./Repaso/2.1.4_Motores.pdf)
   * [Paso a paso](./Repaso/stepper.md)
 * [Lectura de tarjertas RFID](./RFid.md)
+* [Control con Infrarrojos](./Repaso/3.7_Infrarrojos.pdf)
+* Lectura de [tiempos (RTC)](./Repaso/4.2_RTC.pdf)
 
 
 ### Prácticas:
   * Control de motores via Infrarrojos
+  * Semáforo con pulsador para activación.
+  * Control de la visualización de 7 segmentos via Infrarrojos
 
 ## Sesión 4 12-Marzo
 * Introducción a Internet de las Cosas (IOT)
