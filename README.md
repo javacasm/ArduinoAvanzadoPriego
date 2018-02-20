@@ -38,6 +38,14 @@ José Antonio Vacas @javacasm
 
 * Fijar el umbral de riego mediante un potenciómetro
 
+  ![](./images/SistemaRiegoRegulable_bb.png)
+
+* Ahora podemos hacer que el valor del potenciometro regule el [valor de disparo del riego](./codigo/Sistema_Riego_REgulable/Sistema_Riego_REgulable.ino)
+
+* Una vez montado el circuito calibramos los valores de humedad, lo que nos dará un valor de lo que consideramos seco VALOR_SECO y húmedo VALOR_MOJADO. Además definiremos un valor de HISTERESIS que evitará que se produzcan Enciendos/Apagados de manera rápida e intermitente
+
+[Codigo](./codigo/Sistema_Riego_REgulable_calibrado/Sistema_Riego_REgulable_calibrado.ino)
+
 
 ## Sesión 2 19-Febrero
 * Control de brillo de le Led con  [PWM](./Repaso/programacion.md#salidas-anal%C3%B3gicas)
@@ -62,19 +70,26 @@ José Antonio Vacas @javacasm
     * Abrimos el  Ejemplo de la libreria "SimpleDHT" DHT11Default
     * Conectamos el sensor DHT11 segun la imagen
       ![Modulo DHT](./images/DHT11_Kit.jpg)
+      (Cuidado con la velocidad del puerto serie que debe ser 9600)
   * Test de pantalla LCD I2C
     * Instalamos la libreria LiquidCrystal I2C
     * Abrimos el ejemplo de la libreria "LiquidCrystal I2C" HelloWorld
-    * Cambiamos la direccion del LCD ( Puede ser 0x27 o 0x30 o 0x3F)
+    * Cambiamos la direccion del LCD ( Puede ser 0x27 o 0x30 o 0x3F) (Podemos buscar el valor usando ["I2C Scanner"](./codigo/i2c_scanner/i2c_scanner.ino))
     * Conectamos el LCD
-    * Ajustamos el contraste con el potenciometro de la placa
+    * Ajustamos el contraste con el potenciómetro de la placa
   * Estación meteorológica
+    * Mezclamos los 2 ejemplos usados, copiando a un tercero
+     [Código](./codigo/Estacion_Meteorologica/Estacion_Meteorologica.ino)
 
 
 ### Tarea
-Vamos a controlar el color de un led RGB con 3 potenciometros (en el kit tenemos 1 potenciometro y el joystick)
+Vamos a controlar el color de un led RGB con 3 potenciometros (en el kit tenemos 1 potenciometro y con el joystick podemos simular otros 2 (VrX y VrY))
+
+[Proyecto en Tinkercad](https://www.tinkercad.com/things/48ZTGqClfOM)
 
 ![](./images/Control_Potenciometros_RGB.png)
+
+[C'odigo](./codigo/Control_Pots_LedRGB/Control_Pots_LedRGB.ino)
 
 
 ## Sesión 3 5-Marzo
