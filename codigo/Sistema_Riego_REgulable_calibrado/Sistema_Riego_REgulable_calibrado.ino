@@ -1,8 +1,8 @@
 /*
  * Sensor Humedad  A0
  * Rele             8
- * 
- * 
+ * Potenciometro   A1
+ *
  */
 
 #define RELE_PIN 8
@@ -23,15 +23,15 @@ void setup() {
 }
 void loop() {
  // Umbral_humedad = analogRead(PIN_POTENCIOMETRO);   // Valor humbral
-  
+
   int humedad=analogRead(PIN_HUMEDAD);  // entre 0 y 1023
   Serial.println(humedad);
   if ( humedad < (VALOR_MOJADO - HISTERESIS) ){
       // se cumple
       digitalWrite(RELE_PIN,HIGH);   // Enciendo riego
   }
-  
-  
+
+
   if (humedad > (VALOR_MOJADO + HISTERESIS)) {
      // no se cumple
      digitalWrite(RELE_PIN,LOW);   // Apago riego
