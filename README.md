@@ -91,31 +91,27 @@ Vamos a controlar el color de un led RGB con 3 potenciometros (en el kit tenemos
 
 ![](./images/Control_Potenciometros_RGB.png)
 
-[C'odigo](./codigo/Control_Pots_LedRGB/Control_Pots_LedRGB.ino)
+[Código](./codigo/Control_Pots_LedRGB/Control_Pots_LedRGB.ino)
 
 
 ## Sesión 3 5-Marzo
 * [Pulsadores](/Repaso/programacion.md#detectar-una-pulsaci%C3%B3n)
-* Programación avanzada
-    * [Programación C++ avanzada](./Repaso/1.2.3_ProgramacionAvanzadaCavanzado.pdf)
-      * [Proceso de compilación](ProcesoCompilación/README.md)
-      * [Proyectos con varios ficheros](ProyectoVariosFicheros/README.md)
-    * Interrupciones [Hardware](./Repaso/2.1.3_InterrupcionesHardware.pdf) y [Software](./Repaso/1.2.2_ProgramacionAvanzadaInterrupcionesSoftware.pdf)
-    * [Manejo de puertos en parelelo](./Repaso/1.2.1_ProgramacionAvanzadaPuertos.pdf) (Registros)
+* [Proceso de compilación](ProcesoCompilación/README.md)
+* Interrupciones [Hardware](./Repaso/2.1.3_InterrupcionesHardware.pdf) y [Software](./Repaso/1.2.2_ProgramacionAvanzadaInterrupcionesSoftware.pdf)
 
-* [Control de potencia](./Repaso/ElectrónicaPotencia.pdf)
-* Control de motores
-  * [Motores CC](./Repaso/2.1.4_Motores.pdf)
-  * [Paso a paso](./Repaso/stepper.md)
-* [Lectura de tarjertas RFID](./RFid.md)
-* [Control con Infrarrojos](./Repaso/3.7_Infrarrojos.pdf)
-* Lectura de [tiempos (RTC)](./Repaso/4.2_RTC.pdf)
+
+### Lecturas complementarias
+
+* [Programación C++ avanzada](./Repaso/1.2.3_ProgramacionAvanzadaCavanzado.pdf)
 
 
 ### Prácticas:
-  * Control de motores via Infrarrojos
-  * Semáforo con pulsador para activación.
-  * Control de la visualización de 7 segmentos via Infrarrojos
+* Semáforo secuencial
+* Semáforo con pulsador
+* Semáforo con pulsador
+* Interrupciones Hardware
+* Interrupciones software
+
 
 ## Sesión 4 12-Marzo
 * Introducción a Internet de las Cosas (IOT)
@@ -123,6 +119,7 @@ Vamos a controlar el color de un led RGB con 3 potenciometros (en el kit tenemos
 * Plataformas online ( Thingspeak, Thinger.io, etc.)
 * Uso de placa wifi NodeMCU
 
+* [Proyectos con varios ficheros](ProyectoVariosFicheros/README.md)
 ### Prácticas
 Adaptación al NodeMCU de la estación meteorológica con wifi con publicación online de datos
 
@@ -132,3 +129,14 @@ Adaptación al NodeMCU de la estación meteorológica con wifi con publicación 
 
 ## Sesión 6 10-Abril
 * Puesta en común
+
+### Recursos complementarios
+
+* [Manejo de puertos en paralelo](./Repaso/1.2.1_ProgramacionAvanzadaPuertos.pdf) (Registros)
+* [Control de potencia](./Repaso/ElectrónicaPotencia.pdf)
+* Control de motores
+  * [Motores CC](./Repaso/2.1.4_Motores.pdf)
+  * [Paso a paso](./Repaso/stepper.md)
+* [Lectura de tarjertas RFID](./RFid.md)
+* [Control con Infrarrojos](./Repaso/3.7_Infrarrojos.pdf)
+* Lectura de [tiempos (RTC)](./Repaso/4.2_RTC.pdf)
