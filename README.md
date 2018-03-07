@@ -107,11 +107,29 @@ Es lo que se conoce como conexión Pull-Down
 
 * [Secuencias](./Secuencias.md)
 
-Una secuencia es un conjunto de instrucciones que se realiza en determinado orden.
+  Una secuencia es un conjunto de instrucciones que se realiza en determinado orden.
 
-Ejemplos de secuencias son un semáforo, o el programador de una lavadora
+  Ejemplos de secuencias son un semáforo, o el programador de una lavadora
 
-![Semaforo](./images/Semaforo_pulsador_bb.png)
+  Trabajaremos con el ejemplo del semáforo
+
+  ![Semaforo](./images/Semaforo_pulsador_bb.png)
+
+  En nuestro caso un pulsador hará el cambio entre los estados. 
+
+  Si el tiempo de espera entre los estados es alto y usamos delay() veremos que el sistema responde lentamente.
+
+  Para ello dividiremos el tiempo de espera en esperas más cortas entre las que comprobaremos el estado del pulsador
+
+
+        int duracion_rojo = 60000;
+        int numero_iteraciones = 1000;
+        for(int i = 0 ; i < numero_iteraciones ; i = i + 1 ){
+          delay(duracion_rojo / numero_iteraciones);
+          if (digitalRead(PIN_PULSADOR) == HIGH ){
+             break;
+          }
+        }
 
 * [Proceso de compilación](ProcesoCompilación/README.md)
 * [Interrupciones](./Interrupciones.md) [Hardware](./Repaso/2.1.3_InterrupcionesHardware.pdf) y [Software](./Repaso/1.2.2_ProgramacionAvanzadaInterrupcionesSoftware.pdf)
