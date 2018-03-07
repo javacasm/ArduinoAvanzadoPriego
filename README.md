@@ -96,8 +96,19 @@ Vamos a controlar el color de un led RGB con 3 potenciometros (en el kit tenemos
 
 ## Sesión 3 5-Marzo
 * [Pulsadores](/Repaso/programacion.md#detectar-una-pulsaci%C3%B3n)
+
+![Led y pulsador](./images/Led_pulsador_bb.png)
+
+* [Secuencias](./Secuencias.md)
+
+Una secuencia es un conjunto de instrucciones que se realiza en determinado orden.
+
+Ejemplos de secuencias son un semáforo, o el programador de una lavadora
+
+![Semaforo](./images/Semaforo_pulsador_bb.png)
+
 * [Proceso de compilación](ProcesoCompilación/README.md)
-* Interrupciones [Hardware](./Repaso/2.1.3_InterrupcionesHardware.pdf) y [Software](./Repaso/1.2.2_ProgramacionAvanzadaInterrupcionesSoftware.pdf)
+* [Interrupciones](./Interrupciones.md) [Hardware](./Repaso/2.1.3_InterrupcionesHardware.pdf) y [Software](./Repaso/1.2.2_ProgramacionAvanzadaInterrupcionesSoftware.pdf)
 
 
 ### Lecturas complementarias
@@ -106,11 +117,12 @@ Vamos a controlar el color de un led RGB con 3 potenciometros (en el kit tenemos
 
 
 ### Prácticas:
-* Semáforo secuencial
-* Semáforo con pulsador
-* Semáforo con pulsador
-* Interrupciones Hardware
-* Interrupciones software
+* [Semáforo secuencial](./codigo/Semaforo_Secuncia/Semaforo_Secuncia.ino)
+* [Semáforo con pulsador](./codigo/Semaforo_PUlsador/Semaforo_PUlsador.ino)
+* [Semáforo con pulsador y parpadeo](./codigo/Semaforo_PUlsador_Parpadeo/Semaforo_PUlsador_Parpadeo.ino)
+* [Semáforo y comprobación de pulsación](./codigo/Semaforo_Pulsador_Puoolling/Semaforo_Pulsador_Puoolling.ino)
+* [Interrupciones Hardware](./codigo/interrupcion_Hardware/interrupcion_Hardware.ino)
+* Interrupciones software (Ejemplo Interrupt de la librería TimerOne)
 
 
 ## Sesión 4 12-Marzo
