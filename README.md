@@ -99,6 +99,12 @@ Vamos a controlar el color de un led RGB con 3 potenciometros (en el kit tenemos
 
 ![Led y pulsador](./images/Led_pulsador_bb.png)
 
+Conectamos por medio de una resistencia (de 10kOhmios) el pin de arduino a GND de manera que cuando no esté activado el pulsador la patilla reciba 0V. Al pulsarlo se conectará a 5V
+
+Es lo que se conoce como conexión Pull-Down
+
+![Esquema pulsador](./images/Led_pulsador_esquema.png)
+
 * [Secuencias](./Secuencias.md)
 
 Una secuencia es un conjunto de instrucciones que se realiza en determinado orden.
