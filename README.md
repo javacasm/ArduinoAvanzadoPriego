@@ -151,7 +151,7 @@ Es lo que se conoce como conexión Pull-Down
 
 ## Sesión 4 12-Marzo
 * [Introducción a Internet de las Cosas](IOT.md) (IOT)
-* Uso de placa wifi [NodeMCU](./NodeMCU.md) y el [shield de motores](./MotorShield.md)
+* Uso de placa wifi [NodeMCU](./NodeMCU.md) y el [shield de motores](./MotorShield.md) con el [IDE de Arduino](./ConfiguracionIDE.md)
 * Protocolos de envio de datos (REST, MQTT)
 * Plataformas online ( Thingspeak, Thinger.io, etc.)
 
