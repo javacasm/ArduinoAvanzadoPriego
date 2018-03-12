@@ -115,7 +115,7 @@ Es lo que se conoce como conexión Pull-Down
 
   ![Semaforo](./images/Semaforo_pulsador_bb.png)
 
-  En nuestro caso un pulsador hará el cambio entre los estados. 
+  En nuestro caso un pulsador hará el cambio entre los estados.
 
   Si el tiempo de espera entre los estados es alto y usamos delay() veremos que el sistema responde lentamente.
 
@@ -150,10 +150,11 @@ Es lo que se conoce como conexión Pull-Down
 
 
 ## Sesión 4 12-Marzo
-* Introducción a Internet de las Cosas (IOT)
+* [Introducción a Internet de las Cosas](IOT.md) (IOT)
+* Uso de placa wifi [NodeMCU](./NodeMCU.md) y el [shield de motores](./MotorShield.md)
 * Protocolos de envio de datos (REST, MQTT)
 * Plataformas online ( Thingspeak, Thinger.io, etc.)
-* Uso de placa wifi NodeMCU
+
 
 * [Proyectos con varios ficheros](ProyectoVariosFicheros/README.md)
 ### Prácticas
