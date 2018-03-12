@@ -35,3 +35,10 @@ Seleccionamos NodeMCU 1.0
 Ahora tendremos mucho ejemplos de la nueva plataforma
 
 ![EjemplosESP](./images/EjemplosESP.png)
+
+
+Para windows instalamos los drivers
+
+https://www.silabs.com/products/development-tools/software/usb-to-uart-bridge-vcp-drivers
+
+https://www.silabs.com/documents/public/software/CP210x_Windows_Drivers.zip
