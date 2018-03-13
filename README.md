@@ -158,6 +158,14 @@ Es lo que se conoce como conexión Pull-Down
 * [Instalación de soporte para las placas ESP8266 en el IDE de Arduino](./ConfiguracionIDE.md)
 * [Driver CP210x para Windows](https://www.silabs.com/products/development-tools/software/usb-to-uart-bridge-vcp-drivers) ([Alternativo](https://www.silabs.com/documents/public/software/CP210x_Windows_Drivers.zip))
 * Ejemplo de parpadeo led: Ejemplo Blink (D0 o D4)
+
+Usaremos el ejemplo Blink (Archivo-> Ejemplos -> 1.Basics -> Blink) para hacer que parpadee el led incluido en la placa NodeMCU
+
+Vemos que el código en versiones modernas del IDE (1.8.x) se refiere al led como LED_BUILTIN, que equivaldrá a un led distinto en cada tipo de placa.
+En nuestro caso según el fabricante será D0 o D4
+
+![led blink](./images/1.ESP_Led_bb.png)
+
 * Ejemplo de servidor web: Ejemplo ESP8266 WebServer:HelloServer
 * Adaptación al NodeMCU de la estación meteorológica con wifi con publicación online de datos
 
