@@ -167,6 +167,30 @@ En nuestro caso según el fabricante será D0 o D4
 ![led blink](./images/1.ESP_Led_bb.png)
 
 * Ejemplo de servidor web: Ejemplo ESP8266 WebServer:HelloServer
+Usaremos el ejemplo de servidor web: Ejemplo ESP8266 WebServer:HelloServer
+
+Debemos incluir el ssid y el password de nuestro wifi que se usarán en el setup para configurar la conexión wifi
+
+Vemos que existen funciones que se encargan de manejar cada URL
+
+  handleRoot() maneja la URL razi
+  handleNotFound() es la que envía el mensaje de error 404 de página no encontrada
+
+
+Vamos a modificarlo para que incluya los datos de un sensor ficticio.
+
+    void handleRoot() {
+     digitalWrite(led, 1);
+     String CodigoPagina = "<html><body>";
+     CodigoPagina += "<p>Temperatura = " + temp + "</p>";
+     CodigoPagina += "<p>humedad = " + hum + "</p>";
+     CodigoPagina += "</body></html>";
+     server.send(200, "text/plain", CodigoPagina);
+     digitalWrite(led, 0);
+    }
+
+
+En la siguiente sesión lo integraremos con el código del sensor DHT para publicar los datos de temperatura y humedad
 * Adaptación al NodeMCU de la estación meteorológica con wifi con publicación online de datos
 
 ## Sesión 5 15-Marzo
