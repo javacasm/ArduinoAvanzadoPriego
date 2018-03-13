@@ -152,20 +152,25 @@ Es lo que se conoce como conexión Pull-Down
 ## Sesión 4 12-Marzo
 * [Introducción a Internet de las Cosas](IOT.md) (IOT)
 * Uso de placa wifi [NodeMCU](./NodeMCU.md) y el [shield de motores](./MotorShield.md) con el [IDE de Arduino](./ConfiguracionIDE.md)
-* Protocolos de envio de datos (REST, MQTT)
-* Plataformas online ( Thingspeak, Thinger.io, etc.)
+* Familias del ESP8266
 
-
-* [Proyectos con varios ficheros](ProyectoVariosFicheros/README.md)
 ### Prácticas
-Adaptación al NodeMCU de la estación meteorológica con wifi con publicación online de datos
+* Instalación de las placasl ESP8266 en IDE
+* Driver CP210x para Windows
+* Ejemplo de parpadeo led
+* Ejemplo de servidor web
+* Adaptación al NodeMCU de la estación meteorológica con wifi con publicación online de datos
 
 ## Sesión 5 15-Marzo
-* Repaso y ampliación de contenidos
+* Protocolos de envio de datos (REST, MQTT)
+* Plataformas online ( Blink, Cayenne, Thingspeak, Thinger.io, etc.)
+* Configuración de router, ip públicas, etc
+* [Proyectos con varios ficheros](ProyectoVariosFicheros/README.md)
+
 
 
 ## Sesión 6 10-Abril
-* Puesta en común
+* Ampliación de contenidos
 
 ### Recursos complementarios
 
