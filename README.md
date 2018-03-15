@@ -191,10 +191,6 @@ En la siguiente sesión lo integraremos con el código del sensor DHT para publi
 
   ![DHT](./images/3.ESP_DHT-LCD_bb.png)
 
-  * Rele
-
-  ![Reke](./images/4.ESP_DHT-LCD_rele_bb.png)
-
   * Hora via [NTP](./codigo/NTP)
   * Página web sencilla
 
@@ -217,8 +213,7 @@ En la siguiente sesión lo integraremos con el código del sensor DHT para publi
 * Control de dispositivos via Wifi:
   * [Relé controlado via web](./codigo/ControlRelesWeb)
 
-
-
+  ![Reke](./images/4.ESP_DHT-LCD_rele_bb.png)
 
 ## Sesión 6 10-Abril
 * Protocolos de envio de datos (REST, MQTT)
