@@ -188,15 +188,16 @@ En la siguiente sesión lo integraremos con el código del sensor DHT para publi
   * Página web sencilla
   Vamos a modificarlo para que incluya los datos de un sensor ficticio.
 
+
       void handleRoot() {
-       digitalWrite(led, 1);
-       String CodigoPagina = "<html><Title>Datos Meteo</Title><body>";
-       CodigoPagina +=       "<p>Temperatura = " + temp + "</p>";
-       CodigoPagina +=       "<p>humedad = " + hum + "</p>";
-       CodigoPagina +=       "</body></html>";
-       server.send(200, "text/plain", CodigoPagina);
-       digitalWrite(led, 0);
-      }
+           digitalWrite(led, 1);
+           String CodigoPagina = "<html><Title>Datos Meteo</Title><body>";
+           CodigoPagina +=       "<p>Temperatura = " + temp + "</p>";
+           CodigoPagina +=       "<p>humedad = " + hum + "</p>";
+           CodigoPagina +=       "</body></html>";
+           server.send(200, "text/plain", CodigoPagina);
+           digitalWrite(led, 0);
+          }
 
 
 * Publicación de datos via Web
