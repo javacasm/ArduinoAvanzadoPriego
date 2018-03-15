@@ -6,6 +6,7 @@
 En preferences, añadimos el siguiente url en la caja del gestor de tarjetas
     http://arduino.esp8266.com/stable/package_esp8266com_index.json
 
+Se pueden añadir varias URLs
 
 ![Cajas de URLs](./images/ListadoURLS.png)
 
