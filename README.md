@@ -183,10 +183,21 @@ En la siguiente sesión lo integraremos con el código del sensor DHT para publi
 ## Sesión 5 15-Marzo
 * Estación meteorológica con NodeMCU
   * LCD ([Libreria](codigo/ESP8266-I2C-LCD1602.zip))
+
+  ![LCD](./images/2.ESP_LCD_bb.png)
+
+
   * DHT
+
+  ![DHT](./images/3.ESP_DHT-LCD_bb.png)
+
+  * Rele
+
+  ![Reke](./images/4.ESP_DHT-LCD_rele_bb.png)
+
   * Hora via [NTP](./codigo/NTP)
   * Página web sencilla
-  
+
   Vamos a modificarlo para que incluya los datos de un sensor ficticio.
 
 
