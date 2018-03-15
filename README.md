@@ -186,6 +186,7 @@ En la siguiente sesión lo integraremos con el código del sensor DHT para publi
   * DHT
   * Hora via [NTP](./codigo/NTP)
   * Página web sencilla
+  
   Vamos a modificarlo para que incluya los datos de un sensor ficticio.
 
 
