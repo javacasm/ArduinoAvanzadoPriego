@@ -194,6 +194,8 @@ En la siguiente sesión lo integraremos con el código del sensor DHT para publi
 * Adaptación al NodeMCU de la estación meteorológica con wifi con publicación online de datos
 
 ## Sesión 5 15-Marzo
+* Control de dispositivos via Wifi:
+  * Relé contraldo via web
 * Protocolos de envio de datos (REST, MQTT)
 * Plataformas online ( Blink, Cayenne, Thingspeak, Thinger.io, etc.)
 * Configuración de router, ip públicas, etc
