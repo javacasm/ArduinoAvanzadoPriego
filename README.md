@@ -177,34 +177,41 @@ Vemos que existen funciones que se encargan de manejar cada URL
   handleNotFound() es la que envía el mensaje de error 404 de página no encontrada
 
 
-Vamos a modificarlo para que incluya los datos de un sensor ficticio.
-
-    void handleRoot() {
-     digitalWrite(led, 1);
-     String CodigoPagina = "<html><body>";
-     CodigoPagina += "<p>Temperatura = " + temp + "</p>";
-     CodigoPagina += "<p>humedad = " + hum + "</p>";
-     CodigoPagina += "</body></html>";
-     server.send(200, "text/plain", CodigoPagina);
-     digitalWrite(led, 0);
-    }
-
-
 En la siguiente sesión lo integraremos con el código del sensor DHT para publicar los datos de temperatura y humedad
 * Adaptación al NodeMCU de la estación meteorológica con wifi con publicación online de datos
 
 ## Sesión 5 15-Marzo
-* Control de dispositivos via Wifi:
-  * Relé contraldo via web
-* Protocolos de envio de datos (REST, MQTT)
-* Plataformas online ( Blink, Cayenne, Thingspeak, Thinger.io, etc.)
-* Configuración de router, ip públicas, etc
+* Estación meteorológica con NodeMCU
+  * LCD ([Libreria](codigo/ESP8266-I2C-LCD1602.zip))
+  * DHT
+  * Hora via [NTP](./codigo/NTP)
+  * Página web sencilla
+  Vamos a modificarlo para que incluya los datos de un sensor ficticio.
+
+      void handleRoot() {
+       digitalWrite(led, 1);
+       String CodigoPagina = "<html><Title>Datos Meteo</Title><body>";
+       CodigoPagina +=       "<p>Temperatura = " + temp + "</p>";
+       CodigoPagina +=       "<p>humedad = " + hum + "</p>";
+       CodigoPagina +=       "</body></html>";
+       server.send(200, "text/plain", CodigoPagina);
+       digitalWrite(led, 0);
+      }
+
+
+* Publicación de datos via Web
 * [Proyectos con varios ficheros](ProyectoVariosFicheros/README.md)
+* Control de dispositivos via Wifi:
+  * [Relé controlado via web](./codigo/ControlRelesWeb)
+
 
 
 
 ## Sesión 6 10-Abril
-* Ampliación de contenidos
+* Protocolos de envio de datos (REST, MQTT)
+* Plataformas online ( Blink, Cayenne, Thingspeak, Thinger.io, etc.)
+* Configuración de router, ip públicas, etc
+
 
 ### Recursos complementarios
 
