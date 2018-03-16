@@ -159,42 +159,42 @@ Es lo que se conoce como conexión Pull-Down
 * [Driver CP210x para Windows](https://www.silabs.com/products/development-tools/software/usb-to-uart-bridge-vcp-drivers) ([Alternativo](https://www.silabs.com/documents/public/software/CP210x_Windows_Drivers.zip))
 * Ejemplo de parpadeo led: Ejemplo Blink (D0 o D4)
 
-Usaremos el ejemplo Blink (Archivo-> Ejemplos -> 1.Basics -> Blink) para hacer que parpadee el led incluido en la placa NodeMCU
+  Usaremos el ejemplo Blink (Archivo-> Ejemplos -> 1.Basics -> Blink) para hacer que parpadee el led incluido en la placa NodeMCU
 
-Vemos que el código en versiones modernas del IDE (1.8.x) se refiere al led como LED_BUILTIN, que equivaldrá a un led distinto en cada tipo de placa.
-En nuestro caso según el fabricante será D0 o D4
+  Vemos que el código en versiones modernas del IDE (1.8.x) se refiere al led como LED_BUILTIN, que equivaldrá a un led distinto en cada tipo de placa.
+  En nuestro caso según el fabricante será D0 o D4
 
 ![led blink](./images/1.ESP_Led_bb.png)
 
 * Ejemplo de servidor web: Ejemplo ESP8266 WebServer:HelloServer
-Usaremos el ejemplo de servidor web: Ejemplo ESP8266 WebServer:HelloServer
+  Usaremos el ejemplo de servidor web: Ejemplo ESP8266 WebServer:HelloServer
 
-Debemos incluir el ssid y el password de nuestro wifi que se usarán en el setup para configurar la conexión wifi
+  Debemos incluir el ssid y el password de nuestro wifi que se usarán en el setup para configurar la conexión wifi
 
-Vemos que existen funciones que se encargan de manejar cada URL
+  Vemos que existen funciones que se encargan de manejar cada URL
 
-  handleRoot() maneja la URL razi
-  handleNotFound() es la que envía el mensaje de error 404 de página no encontrada
+    handleRoot() maneja la URL razi
+    handleNotFound() es la que envía el mensaje de error 404 de página no encontrada
 
 
-En la siguiente sesión lo integraremos con el código del sensor DHT para publicar los datos de temperatura y humedad
-* Adaptación al NodeMCU de la estación meteorológica con wifi con publicación online de datos
+  En la siguiente sesión lo integraremos con el código del sensor DHT para publicar los datos de temperatura y humedad
+  * Adaptación al NodeMCU de la estación meteorológica con wifi con publicación online de datos
 
 ## Sesión 5 15-Marzo
 * Estación meteorológica con NodeMCU
-  * LCD ([Libreria](codigo/ESP8266-I2C-LCD1602.zip))
+  * LCD ([Libreria LCD I2C para ESP](codigo/ESP8266-I2C-LCD1602.zip)) (La que usábamos para Arduino no es compatible)
 
   ![LCD](./images/2.ESP_LCD_bb.png)
 
 
-  * DHT
+  * DHT Usamos el ejemplo DHT22Default o el DHT11Default según el sensor usado (DHT22 o DHT11)
 
   ![DHT](./images/3.ESP_DHT-LCD_bb.png)
 
-  * Hora via [NTP](./codigo/NTP)
+
   * Página web sencilla
 
-  Vamos a modificarlo para que incluya los datos de un sensor ficticio.
+    Vamos a modificarlo para que incluya los datos de un sensor ficticio.
 
 
       void handleRoot() {
@@ -208,8 +208,8 @@ En la siguiente sesión lo integraremos con el código del sensor DHT para publi
           }
 
 
-* Publicación de datos via Web
-* [Proyectos con varios ficheros](ProyectoVariosFicheros/README.md)
+* Publicación de datos via Web: Ejemplo ESPWebServer->HelloServer
+
 * Control de dispositivos via Wifi:
   * [Relé controlado via web](./codigo/ControlRelesWeb)
 
@@ -219,7 +219,8 @@ En la siguiente sesión lo integraremos con el código del sensor DHT para publi
 * Protocolos de envio de datos (REST, MQTT)
 * Plataformas online ( Blink, Cayenne, Thingspeak, Thinger.io, etc.)
 * Configuración de router, ip públicas, etc
-
+* Hora via [NTP](./codigo/NTP) Ejemplo que nos permite recuperar la hora actual via Internet
+* [Proyectos con varios ficheros](ProyectoVariosFicheros/README.md)
 
 ### Recursos complementarios
 
