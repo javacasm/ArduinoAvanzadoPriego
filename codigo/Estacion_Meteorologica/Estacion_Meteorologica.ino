@@ -1,12 +1,12 @@
 #include <SimpleDHT.h>
 
-#include <Wire.h> 
+#include <Wire.h>
 #include <LiquidCrystal_I2C.h>
 
 LiquidCrystal_I2C lcd(0x27,16,2);  // set the LCD address to 0x27 for a 16 chars and 2 line display
 
 
-int pinDHT22 = 2;
+int pinDHT22 = D2;
 SimpleDHT22 dht22;
 
 void setup() {
@@ -25,9 +25,9 @@ void loop() {
     Serial.print("Read DHT22 failed, err="); Serial.println(err);delay(1000);
     return;
   }
-  
+
   Serial.print("Sample OK: ");
-  Serial.print((int)temperature); Serial.print(" *C, "); 
+  Serial.print((int)temperature); Serial.print(" *C, ");
   Serial.print((int)humidity); Serial.println(" H");
 
   lcd.setCursor(0,0);  // (x,y)
