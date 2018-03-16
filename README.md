@@ -182,20 +182,37 @@ Es lo que se conoce como conexión Pull-Down
 
 ## Sesión 5 15-Marzo
 * Estación meteorológica con NodeMCU
+* LCD y sensor DHT
+* Publicación de datos via WebServer
+
+## Prácticas
+
   * LCD ([Libreria LCD I2C para ESP](codigo/ESP8266-I2C-LCD1602.zip)) (La que usábamos para Arduino no es compatible)
 
   ![LCD](./images/2.ESP_LCD_bb.png)
 
+      * Descargamos el zip y lo importamos desde Programa->Incluir Librería -> Importar fichero ZIP
 
-  * DHT Usamos el ejemplo DHT22Default o el DHT11Default según el sensor usado (DHT22 o DHT11)
+      * Usaremos el ejemplo HelloWorld de la librería ESP8266-I2C-LCD1602
+
+  * DHT Usaremos la librería SimpleDHT que si es compatible con Arduino y con el ESP
 
   ![DHT](./images/3.ESP_DHT-LCD_bb.png)
 
-    **Cambiamos el pin del ejemplo al D2**
+      * Usamos el ejemplo DHT22Default o el DHT11Default según el sensor usado (DHT22 o DHT11)
+      * **Cambiamos el pin del ejemplo al D2**
 
-  * Página web sencilla
+  * Estación meteorológica: mostramos los datos de temperatura y humedad del sensor DHT en el LCD
 
-    Vamos a modificarlo para que incluya los datos de un sensor ficticio.
+    * Integramos los 2 ejemplos anteriores:
+      * Variables e includes
+      * Contenido de los setup
+      * Contenido del bucle loop
+
+
+  * * Publicación de datos via Web:Usaremos el ejemplo ESPWebServer->HelloServer
+
+    Vamos a modificarlo para que incluya los datos del sensor:
 
 
       void handleRoot() {
@@ -209,14 +226,13 @@ Es lo que se conoce como conexión Pull-Down
           }
 
 
-* Publicación de datos via Web: Ejemplo ESPWebServer->HelloServer
 
+
+## Sesión 6 10-Abril
 * Control de dispositivos via Wifi:
   * [Relé controlado via web](./codigo/ControlRelesWeb)
 
-  ![Reke](./images/4.ESP_DHT-LCD_rele_bb.png)
-
-## Sesión 6 10-Abril
+  ![Relé](./images/4.ESP_DHT-LCD_rele_bb.png)
 * Protocolos de envio de datos (REST, MQTT)
 * Plataformas online ( Blink, Cayenne, Thingspeak, Thinger.io, etc.)
 * Configuración de router, ip públicas, etc
