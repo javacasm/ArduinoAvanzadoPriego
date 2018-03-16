@@ -225,9 +225,6 @@ Es lo que se conoce como conexión Pull-Down
            digitalWrite(led, 0);
           }
 
-
-
-
 ## Sesión 6 10-Abril
 * Control de dispositivos via Wifi:
   * [Relé controlado via web](./codigo/ControlRelesWeb)
