@@ -211,10 +211,11 @@ Es lo que se conoce como conexión Pull-Down
           * Contenido de los setup
           * Contenido del bucle loop
 
-      [Código](./codigo/Estacion_Meteorologica/Estacion_Meteorologica.ino)
+       [Código](./codigo/Estacion_Meteorologica/Estacion_Meteorologica.ino)
 
 
- * Publicación de datos via Web:
+ * Publicación de datos via Web:A
+
      * Usaremos el ejemplo ESPWebServer->HelloServer
      * Vamos a modificarlo para que incluya los datos del sensor:
 
