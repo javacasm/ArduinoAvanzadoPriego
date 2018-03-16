@@ -220,15 +220,16 @@ Es lo que se conoce como conexión Pull-Down
      * Vamos a modificarlo para que incluya los datos del sensor:
 
 
-          void handleRoot() {
-               digitalWrite(led, 1);
-               String CodigoPagina = "<html><Title>Datos Meteo</Title><body>";
-               CodigoPagina +=       "<p>Temperatura = " + temp + "</p>";
-               CodigoPagina +=       "<p>humedad = " + hum + "</p>";
-               CodigoPagina +=       "</body></html>";
-               server.send(200, "text/plain", CodigoPagina);
-               digitalWrite(led, 0);
-              }
+
+    void handleRoot() {
+         digitalWrite(led, 1);
+         String CodigoPagina = "<html><Title>Datos Meteo</Title><body>";
+         CodigoPagina +=       "<p>Temperatura = " + temp + "</p>";
+         CodigoPagina +=       "<p>humedad = " + hum + "</p>";
+         CodigoPagina +=       "</body></html>";
+         server.send(200, "text/plain", CodigoPagina);
+         digitalWrite(led, 0);
+        }
 
 
     [Código](./codigo/ESP_MeteoServer/ESP_MeteoServer.ino)
