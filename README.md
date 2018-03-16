@@ -192,8 +192,8 @@ Es lo que se conoce como conexión Pull-Down
   ![LCD](./images/2.ESP_LCD_bb.png)
 
       * Descargamos el zip y lo importamos desde Programa->Incluir Librería -> Importar fichero ZIP
-
       * Usaremos el ejemplo HelloWorld de la librería ESP8266-I2C-LCD1602
+
 
   * DHT Usaremos la librería SimpleDHT que si es compatible con Arduino y con el ESP
 
@@ -202,16 +202,18 @@ Es lo que se conoce como conexión Pull-Down
       * Usamos el ejemplo DHT22Default o el DHT11Default según el sensor usado (DHT22 o DHT11)
       * **Cambiamos el pin del ejemplo al D2**
 
+
   * Estación meteorológica: mostramos los datos de temperatura y humedad del sensor DHT en el LCD
 
-    * Integramos los 2 ejemplos anteriores:
-      * Variables e includes
-      * Contenido de los setup
-      * Contenido del bucle loop
+      * Integramos los 2 ejemplos anteriores:
+          * Variables e includes
+          * Contenido de los setup
+          * Contenido del bucle loop
 
-    [Código](./codigo/Estacion_Meteorologica/Estacion_Meteorologica.ino)
+   [Código](./codigo/Estacion_Meteorologica/Estacion_Meteorologica.ino)
 
-  * * Publicación de datos via Web:Usaremos el ejemplo ESPWebServer->HelloServer
+
+ * Publicación de datos via Web:Usaremos el ejemplo ESPWebServer->HelloServer
 
     Vamos a modificarlo para que incluya los datos del sensor:
 
@@ -227,7 +229,8 @@ Es lo que se conoce como conexión Pull-Down
           }
 
 
-      [Código](./codigo/ESP_MeteoServer/ESP_MeteoServer.ino)
+    [Código](./codigo/ESP_MeteoServer/ESP_MeteoServer.ino)
+
 
 ## Sesión 6 10-Abril
 * Control de dispositivos via Wifi:
