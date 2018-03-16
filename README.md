@@ -191,6 +191,7 @@ Es lo que se conoce como conexión Pull-Down
 
   ![DHT](./images/3.ESP_DHT-LCD_bb.png)
 
+    **Cambiamos el pin del ejemplo al D2**
 
   * Página web sencilla
 
