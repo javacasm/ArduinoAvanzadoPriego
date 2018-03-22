@@ -31,6 +31,13 @@ Python
 
 ### [Grafana](https://www.spainlabs.com/foros/tema-SpainLabsIoT2018-Grafana-Dashboard-Open-Source)
 
+
+Grafana https://grafana.com/
+Connect2me https://www.connect2.me/
+All Things Talk https://www.allthingstalk.com/
+Thingspeak https://thingspeak.com/
+Xively https://www.xively.com/
+
 ## Otras Publicaciones
 
 [Telegram](https://arduinocentermx.blogspot.com.es/2017/07/nodemcu-bot-telegram.html)
