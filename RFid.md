@@ -13,6 +13,10 @@
 [Proyecto]
 (https://www.instructables.com/id/MFRC522-RFID-Reader-Interfaced-With-NodeMCU/)
 
+* Usa un fichero txt en un servidor con las IDs de las tarjetas autorizadas
+
+![https://cdn.instructables.com/FR0/8ME3/J3KFD3L3/FR08ME3J3KFD3L3.LARGE.jpg](https://cdn.instructables.com/FR0/8ME3/J3KFD3L3/FR08ME3J3KFD3L3.LARGE.jpg)
+
 
 ### Libreria [MFRC522](https://github.com/miguelbalboa/rfid) by MiguelBalboa
 
