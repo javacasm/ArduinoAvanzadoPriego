@@ -1,3 +1,4 @@
+
 #include <ESP8266WiFi.h>
 #include <WiFiClient.h>
 #include <ESP8266WebServer.h>
@@ -11,7 +12,7 @@
 
 LiquidCrystal_I2C_ESP lcd(0x27, 16, 2);
 
-// for DHT22, 
+// for DHT22,
 //      VCC: 5V or 3V
 //      GND: GND
 //      DATA: D2
@@ -62,7 +63,7 @@ void handleNotFound(){
 }
 
 void setup(void){
-  
+
   // initialize the LCD
   lcd.begin(D3,D4);  // sda=0 | D3, scl=2 | D4
 
@@ -108,14 +109,14 @@ void mideSensores(){
  // start working...
   Serial.println("=================================");
   Serial.println("Sample DHT22...");
-  
-  
+
+
   int err = SimpleDHTErrSuccess;
   if ((err = dht22.read2(pinDHT22, &temperatura, &humedad, NULL)) != SimpleDHTErrSuccess) {
     Serial.print("Read DHT22 failed, err="); Serial.println(err);delay(2000);
     return;
   }
-  
+
   Serial.print("Sample OK: ");
   Serial.print((float)temperatura); Serial.print(" *C, ");
   lcd.setCursor(0,0);
@@ -124,23 +125,16 @@ void mideSensores(){
   Serial.print((float)humedad); Serial.println(" RH%");
   lcd.setCursor(0,1);
   lcd.print("Humedad:");
-  lcd.print((float)humedad);  
+  lcd.print((float)humedad);
 }
 
-
+long ultimaMedida = 0;
+long periodoMedida = 500;
 void loop(void){
   server.handleClient();
-  mideSensores();
-  delay(100);
+  long tiempoActual = millis();
+  if( (tiempoActual - ultimaMedida) > periodoMedida ) {
+    mideSensores();
+    ultimaMedida = millis();
+  }
 }
-
-
-
-
-
-
-
-
-
-
-
