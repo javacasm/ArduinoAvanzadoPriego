@@ -241,6 +241,8 @@ Es lo que se conoce como conexión Pull-Down
 
   ![Relé](./images/4.ESP_DHT-LCD_rele_bb.png)
 
+* [Configuración de router, ip públicas, etc](./routers.md)
+
 * Protocolos de envio de datos (REST, MQTT)
 
 ### API Rest
@@ -257,7 +259,30 @@ https://www.prometec.net/esp8266-subir-valores/
 
 ![Arquitectura MQTT](./images/MQTT_arquitectura.png)
 
-#### Thingsboard (MQTT)
+
+Servidor
+
+    mosquitto
+
+Subscripción
+
+    mosquitto_sub -t "casa/habitaciones/#" -v -A 192.168.1.7
+
+
+
+
+Publicación
+
+
+    mosquitto_pub -t "casa/habitaciones/hab2/luz" -m "ON" -A 192.168.1.7
+
+
+    #  casa/habitaciones/hab2/luz ON
+
+
+[Tutorial](https://ricveal.com/blog/primeros-pasos-mqtt/)
+
+#### https://thingsboard.io (MQTT)
 
 https://thingsboard.io/docs/samples/esp8266/temperature/#step-2-install-arduino-libraries
 
@@ -313,9 +338,14 @@ https://programarfacil.com/esp8266/mqtt-esp8266-raspberry-pi/
 
 https://www.instructables.com/id/IoT-ESP8266-Series-2-Monitor-Data-Through-ThingSpe/
 
+## http://cayenne.com
+
+Usa MQTT
+
+[Tutorial](https://programarfacil.com/blog/arduino-blog/cayenne-mydevices-arduino-sensores-iot/)
 
 
-* Configuración de router, ip públicas, etc
+* WifiManager: Librería
 * Hora via [NTP](./codigo/NTP) Ejemplo que nos permite recuperar la hora actual via Internet
 * [Proyectos con varios ficheros](ProyectoVariosFicheros/README.md)
 
