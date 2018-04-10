@@ -237,7 +237,7 @@ Es lo que se conoce como conexión Pull-Down
 
 ## Sesión 6 10-Abril
 * Control de dispositivos via Wifi:
-  * [Relé controlado via web](./codigo/ControlRelesWeb)
+  * [Relé controlado via web](./codigo/ControlRelesWeb) [codigoZIP](./codigo/ControlRelesWeb.zip)
 
   ![Relé](./images/4.ESP_DHT-LCD_rele_bb.png)
 
